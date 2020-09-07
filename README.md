@@ -1,6 +1,6 @@
-# Trabalho Modern Web - Turma de MBA Fiap/2020
+# Modern Web Work - MBA Class Fiap / 2020
 
-Inclusão de nova rota, mudanças de rotas e estilização utilizando BootsWatch. 
+Inclusion of new route, route changes and styling using BootsWatch.
 
 # Example app where it caches SSR'ed pages in the memory
 
