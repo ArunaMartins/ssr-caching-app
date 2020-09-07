@@ -1,3 +1,7 @@
+# Trabalho Modern Web - Turma de MBA Fiap/2020
+
+Inclusão de nova rota, mudanças de rotas e estilização utilizando BootsWatch. 
+
 # Example app where it caches SSR'ed pages in the memory
 
 React Server Side rendering is very costly and takes a lot of server's CPU power for that. One of the best solutions for this problem is cache already rendered pages.

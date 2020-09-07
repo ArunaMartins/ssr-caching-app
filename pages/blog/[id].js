@@ -1,11 +1,17 @@
+import Head from 'next/head';
+
 export default function Post(props) {
   return (
     <div>
-      <h1>My {props.id} blog post</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </p>
+      <Head>
+        <h1 class = "tituloPrincipal">{props.id}</h1>
+        <link rel = 'stylesheet' href = 'https://bootswatch.com/4/minty/bootstrap.min.css'></link>
+      </Head>
+      <div class="alert alert-dismissible alert-secondary">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Well done! </strong> 
+          <a>You built a new page.</a>
+      </div>
     </div>
   )
 }
@@ -17,9 +23,10 @@ export async function getStaticProps({ params: { id } }) {
 export async function getStaticPaths() {
   return {
     paths: [
-      { params: { id: 'first' } },
-      { params: { id: 'second' } },
-      { params: { id: 'last' } },
+      { params: { id: 'about' } },
+      { params: { id: 'post' } },
+      { params: { id: 'lifestyle' } },
+      { params: { id: 'contact' } },
     ],
     fallback: true,
   }
